@@ -1,0 +1,29 @@
+:root{--bg:#F4F5F7;--ink:#16182A;--rose:#B3224F;--mute:#6B6F80;--line:#D9DCE3}
+body{background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.6}
+h1,h2,h3,.navbar-brand{font-family:'Bodoni Moda',serif;font-weight:500;line-height:1.15}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);margin-bottom:1rem}
+h2{font-size:2rem}h3{font-size:1.25rem;margin:.9rem 0 .2rem}
+.lead{color:var(--mute);max-width:46ch}
+.site-nav{border-bottom:1px solid var(--line);padding:1rem 0}
+.navbar-brand{font-size:1.5rem;font-style:italic}
+.nav-link{color:var(--ink)!important}.nav-link:hover{color:var(--rose)!important}
+.hero{padding:4rem 0 3rem}
+.hero-img{width:100%;max-height:560px;object-fit:cover;border-radius:2px}
+.collection{padding:3rem 0 4rem}
+.piece-img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.collection p{color:var(--mute);margin:0}
+.page-top{padding:3.5rem 0 4rem}
+.narrow{max-width:620px}
+.event-tile{display:block;color:inherit;text-decoration:none;position:relative;overflow:hidden}
+.event-tile img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;transition:transform .4s}
+.event-tile:hover img{transform:scale(1.04)}
+.event-info{position:absolute;inset:auto 0 0 0;padding:1.5rem 1rem 1rem;color:#fff;background:linear-gradient(transparent,rgba(22,24,42,.85))}
+.event-info h3{margin:0;font-size:1.2rem}.event-info p{margin:0;font-size:.9rem;opacity:.9}
+.btn-ink{background:var(--ink);color:#fff;border-radius:0;padding:.7rem 1.6rem}
+.btn-ink:hover{background:var(--rose);color:#fff}
+.btn-outline-ink{border:1px solid var(--ink);color:var(--ink);border-radius:0;padding:.7rem 1.6rem}
+.btn-outline-ink:hover{background:var(--ink);color:#fff}
+.form-control,.form-select{border-radius:0;border-color:var(--ink);padding:.7rem}
+.form-control:focus,.form-select:focus{border-color:var(--rose);box-shadow:0 0 0 .2rem rgba(179,34,79,.2)}
+.site-footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--mute);font-size:.9rem}
+@media (prefers-reduced-motion:reduce){.event-tile img{transition:none}}
